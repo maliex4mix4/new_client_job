@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Website</title>
+</head>
+<body id="body">
+    <section class="header">
+        <div class="content-first">
+            <h3>Are you a business owner in Nigeria ?</h3>
+            <h4>FREE live class reveals  ...</h4>
+            <p>
+                All you need (to know) to start generating millions of naira selling your products on social media
+                <br><small>Even If,You have no money for paid Ads.</small>
+            </p>
+        </div>
+    </section>
+    <section class="body text-center">
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content text-center">
+                    <div class="modal-header">
+                        <h5 class="modal-title">THANK YOU</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center">
+                            <h6>Congratulations!!</h6>
+                            You have successfully secured your spot!
+                            These next few steps are crucial for your participation. Read them very carefully…
+                            <h6>Step #1</h6>
+                            <p>
+                                Get Me Out of Junk & Set a Reminder! 
+                                An email titled: “Important: confirm your seat!“. has just been sent to your inbox
+                                If you can’t find it in your inbox, then you need to open your Junk/Spam folder and mark it as NOT JUNK.
+                                If you use Gmail, the email could be in your Promotions or Updates tabs. Move it to your Inbox so you don’t miss the LIVE class.
+                                (skip this step if you already receive emails from me)
+                            </p>
+    
+                            Set a reminder on your phone right now for the live class 
+    
+                            There would be no replay and I have no clue if I am ever going to do this again. So mark the event down right now in your calendar. Because you really signed up for this therefore give no room for excuses for not showing up. Mark the date in your calendar now. And if you have a friend that you know would benefit from this. Then don’t hesitate to forward the invite link to them.
+                            <br>
+                            <strong>See you in class</strong>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-4 pt-2">
+            <div class="col-md-6 p-3">
+                <div class="container bg-white text-left p-3 shadow border border-rounded">
+                   <p>
+                        ENTER YOUR EMAIL NOW to register for this one-time FREE Live class.
+                   </p>
+                   <ul style="list-style-type: lower-roman;">
+                       <h4 class="txt-2">
+                            In this live class you will learn about;
+                       </h4>
+                       <li>
+                            How to reach more potential buyers on social media ...even if you have no money for paid ads.
+                       </li>
+                       <li>
+                            How to filter out un-serious buyers who will price your product for less before they get into your DM.
+                       </li>
+                       <li>The ultimate sales strategy that will help you outsmart your competitors... Without charging less for your products.</li>
+                   </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="container bg-white text-justify shadow p-3 border border-rounded">
+                    <p>
+                        Strategies that would be shared in this class are proven marketing secrets smart business owners in Nigeria are using to SKYROCKET their sales after the lockdown.
+                    </p>
+                    <p>
+                        This live class would be taking place on  10th October 2020
+                    </p>
+                    <h6 class="pt-2 pb-2">
+                        Venue: Online from the comfort of your room.
+                        Time: 8.00pm (So that each and every one of us can go to bed early )
+                    </h6>
+                    <h5 class="txt-2">
+                        Who should join this live class?
+                    </h5>
+                    All business owners selling on Whatsapp, Facebook, Instagram and twitter ready to take their business to the next level.
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container w-50-sm">
+            <h3 class="txt-2 text-center p-3">Add your best email below to secure your spot</h3>
+            <form action="" id="btni-form">
+                <div class="form-group text-left">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="email" required>
+                    <small id="emailHelpId" class="form-text text-muted text-center"></small>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="submit" class="btn w-100 btni" data-target="#modelId">
+                    Secure Seat 
+                </button>
+            </form>
+            <div class="container-fluid pt-3 d-flex">
+                <div class="flex-item w-25 bbg">
+                    <div id="days"></div>
+                    <br>
+                    <strong>Days</strong>
+                </div>
+                <div class="flex-item w-25 bbg">
+                    <div id="hour"></div>
+                    <br>
+                    <strong>Hours</strong>
+                </div>
+                <div class="flex-item w-25 bbg">
+                    <div id="min"></div>
+                    <br>
+                    <strong>Mins</strong>
+                </div>
+                <div class="flex-item w-25 bbg">
+                    <div id="sec"></div>
+                    <br>
+                    <strong>Secs</strong>
+                </div>
+                
+            </div>
+            <h3 id="disp-done" class="p-3" style="display: none;">Registration Ended</h3>
+        </div>
+        
+    </section>
+    <footer class="p-3 text-center">
+        Made by <a href="http://techlava.com.ng">Tech Lava</a>
+    </footer>
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/popper.min.js"></script>
+    <script src="./assets/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let email;
+            $('#email').on("change", function (e) {
+                email = $(this).val();
+            });
+            $( '#btni-form' ).submit(function(e) {
+                e.preventDefault();
+                const data = {
+                    email: email,
+                    send: true
+                }
+                if (data) {
+                    $('#modelId').modal("show");
+                }
+            } );
+            function timerCount() {
+                var endTime = new Date("17 October 2020 20:48:00 GMT+01:00");
+                endTime = (Date.parse(endTime)/1000);
+
+                var nowTime = new Date();
+                nowTime = (Date.parse(nowTime)/1000)
+
+                let timeLeft = endTime-nowTime
+
+                var days = Math.floor(timeLeft/86400);
+                var hours = Math.floor((timeLeft-(days*86400))/3600);
+                var min = Math.floor((timeLeft-(days*86400)-(hours*3600))/60);
+                var sec = Math.floor((timeLeft-(days*86400)-(hours*3600)-(min*60)));
+
+                if (hours < "10") {
+                    hours = "0"+hours;
+                }
+                
+                if (min < "10") {
+                    min = "0"+min;
+                }
+                if (sec < "10") {
+                    sec = "0"+sec;
+                }
+
+                if ((days <= "0" || hours <= "0" || min <= "0" || sec <= "0")) {
+                    $('#days').html(days);
+                    $('#hour').html(hours);
+                    $('#min').html(min);
+                    $('#sec').html(sec);
+                }else{
+                    $('#days').html("0 0");
+                    $('#hour').html("0 0");
+                    $('#min').html("0 0");
+                    $('#sec').html("0 0");
+
+                    $('#disp-done').css("display", "block");
+                }
+
+            }
+            setInterval(timerCount, 1000);
+        });
+        
+    </script>
+</body>
+</html>
