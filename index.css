@@ -72,6 +72,14 @@ ul li{
   background: firebrick;
   margin: 0.5vh;
   color: white;
+  box-sizing: border-box;
+  box-shadow: rgba(243, 216, 216, 0.6) 1.3vw 1.6vw;
+}
+.bbg div{
+  color: wheat;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
 }
 
 .txt-fire{
