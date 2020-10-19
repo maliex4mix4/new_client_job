@@ -38,12 +38,13 @@ body {
     color: white;
     font-size: 3vh;
     margin-top: 1.5vh;
-    line-height: 3em;
+    /* line-height: 5.5vh; */
 }
 
 .content-first p small{
   text-decoration: underline;
   color: firebrick;
+  margin-top: 1vh;
 }
 
 .body{
@@ -72,9 +73,13 @@ ul li{
   margin: 0.5vh;
   color: white;
 }
+
+.txt-fire{
+  color: firebrick !important;
+}
 @media only screen and (max-width: 600px) {
   .content-first{
-    height: 100vh;
+    height: 100vh; 
   }
   .w-50-sm{
     width: 95vw;
