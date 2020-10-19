@@ -17,36 +17,51 @@
                 All you need (to know) to start generating millions of naira selling your products on social media
                 <br><small>Even If,You have no money for paid Ads.</small>
             </p>
+            <a href="#reg"><button class="btn btni btn-large">Register Now</button></a>
         </div>
     </section>
     <section class="body text-center">
         <!-- Modal -->
         <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
             <div class="modal-dialog" role="document">
-                <div class="modal-content text-center">
+                <div class="modal-content text-left">
                     <div class="modal-header">
                         <h5 class="modal-title">THANK YOU</h5>
                     </div>
                     <div class="modal-body">
-                        <p class="text-center">
-                            <h6>Congratulations!!</h6>
-                            You have successfully secured your spot!
+                        <h6 class="text-left">Congratulations!!</h6>
+                        <p>
+                            You have successfully secured your spot! <br>
                             These next few steps are crucial for your participation. Read them very carefully…
-                            <h6>Step #1</h6>
-                            <p>
-                                Get Me Out of Junk & Set a Reminder! 
-                                An email titled: “Important: confirm your seat!“. has just been sent to your inbox
-                                If you can’t find it in your inbox, then you need to open your Junk/Spam folder and mark it as NOT JUNK.
-                                If you use Gmail, the email could be in your Promotions or Updates tabs. Move it to your Inbox so you don’t miss the LIVE class.
-                                (skip this step if you already receive emails from me)
-                            </p>
-    
-                            Set a reminder on your phone right now for the live class 
-    
-                            There would be no replay and I have no clue if I am ever going to do this again. So mark the event down right now in your calendar. Because you really signed up for this therefore give no room for excuses for not showing up. Mark the date in your calendar now. And if you have a friend that you know would benefit from this. Then don’t hesitate to forward the invite link to them.
-                            <br>
-                            <strong>See you in class</strong>
                         </p>
+                        <h6 class="text-left">Step #1</h6>
+                        <p>
+                            Get Me Out of Junk & Set a Reminder! <br>
+                            An email titled: “Important: confirm your seat!“. has just been sent to your inbox
+                            If you can’t find it in your inbox, then you need to open your Junk/Spam folder and mark it as NOT JUNK.
+                            If you use Gmail, the email could be in your Promotions or Updates tabs. Move it to your Inbox so you don’t miss the LIVE class.
+                            (skip this step if you already receive emails from me)
+                        </p>
+
+                        <p>
+                            <u>
+                                <b>
+                                    Set a reminder on your phone right now for the live class
+                                </b>
+                            </u>
+                        </p> 
+
+                        <p>
+                            There would be no replay and I have no clue if I am ever going to do this again. So mark the event down right now in your calendar. Because you really signed up for this therefore give no room for excuses for not showing up. Mark the date in your calendar now.
+                        </p>
+                        <p class="text-right">
+                            <button class="btn btni btn-medium" id="cpy-date"><i class="fa fa-link" aria-hidden="true"></i>  Copy Date</button>
+                        </p>
+                        <p>
+                            And if you have a friend that you know would benefit from this. Then don’t hesitate to forward the invite link to them.
+                        </p>
+                        <br>
+                        <strong>See you in class</strong>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -57,9 +72,6 @@
         <div class="row p-4 pt-2">
             <div class="col-md-6 p-3">
                 <div class="container bg-white text-left p-3 shadow border border-rounded">
-                   <p>
-                        ENTER YOUR EMAIL NOW to register for this one-time FREE Live class.
-                   </p>
                    <ul style="list-style-type: lower-roman;">
                        <h4 class="txt-2">
                             In this live class you will learn about;
@@ -76,6 +88,19 @@
             </div>
             <div class="col-md-6">
                 <div class="container bg-white text-justify shadow p-3 border border-rounded">
+                    <h5 id="reg" class="text-center pb-3">Enter E-mail to Resgister Now!</h5>
+                    <div id="message" class="alert alert-danger"></div>
+                    <form id="btni-form" class="mb-4">
+                        <div class="form-group text-left">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="email" required>
+                            <small id="emailHelpId" class="form-text text-muted text-center"></small>
+                        </div>
+                        <!-- Button trigger modal -->
+                        <button type="submit" id="submit" class="btn w-100 btni" data-target="#modelId">
+                            Yes, Secure Seat <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </form>
                     <p>
                         Strategies that would be shared in this class are proven marketing secrets smart business owners in Nigeria are using to SKYROCKET their sales after the lockdown.
                     </p>
@@ -84,18 +109,44 @@
                     </p>
                     <h6 class="pt-2 pb-2">
                         Venue: Online from the comfort of your room.
+                        <br><br>
                         Time: 8.00pm (So that each and every one of us can go to bed early )
                     </h6>
-                    <h5 class="txt-2">
+                    <h5 class="txt-2 txt-fire">
                         Who should join this live class?
                     </h5>
-                    All business owners selling on Whatsapp, Facebook, Instagram and twitter ready to take their business to the next level.
+                    <p>All business owners selling on Whatsapp, Facebook, Instagram and twitter ready to take their business to the next level.</p>
+                </div>
+                <h6 class="txt-2 text-center p-3 text-default">Add your best email below to secure your spot</h6>
+                
+                <div class="container-fluid pt-3 d-flex">
+                    <div class="flex-item w-25 bbg">
+                        <div id="days"></div>
+                        <br>
+                        <strong>Days</strong>
+                    </div>
+                    <div class="flex-item w-25 bbg">
+                        <div id="hour"></div>
+                        <br>
+                        <strong>Hours</strong>
+                    </div>
+                    <div class="flex-item w-25 bbg">
+                        <div id="min"></div>
+                        <br>
+                        <strong>Mins</strong>
+                    </div>
+                    <div class="flex-item w-25 bbg">
+                        <div id="sec"></div>
+                        <br>
+                        <strong>Secs</strong>
+                    </div>
                     
                 </div>
+                <h5 id="disp-done" class="p-3" style="display: none;">Registration Ended</h5>
             </div>
         </div>
 
-        <div class="container w-50-sm">
+        <!-- <div class="container w-50-sm" id="reg">
             <h3 class="txt-2 text-center p-3">Add your best email below to secure your spot</h3>
             <form action="" id="btni-form">
                 <div class="form-group text-left">
@@ -103,7 +154,6 @@
                     <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="email" required>
                     <small id="emailHelpId" class="form-text text-muted text-center"></small>
                 </div>
-                <!-- Button trigger modal -->
                 <button type="submit" class="btn w-100 btni" data-target="#modelId">
                     Yes, Secure Seat <i class="fa fa-paper-plane" aria-hidden="true"></i>
                 </button>
@@ -132,7 +182,7 @@
                 
             </div>
             <h3 id="disp-done" class="p-3" style="display: none;">Registration Ended</h3>
-        </div>
+        </div> -->
         
     </section>
     <footer class="p-3 text-center">
@@ -141,24 +191,18 @@
     <script src="./assets/jquery.min.js"></script>
     <script src="./assets/popper.min.js"></script>
     <script src="./assets/bootstrap.min.js"></script>
+    <script src="./assets/SmoothScroll.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            let email;
-            $('#email').on("change", function (e) {
-                email = $(this).val();
+            const dateEvent = "18 October 2020 20:48:00 GMT+01:00";
+
+            $('#cpy-date').on('click', function () {
+                let cpyText = dateEvent;
+                document.execCommand('copy', cpyText);
+                $('#cpy-date').html("Copied !")
             });
-            $( '#btni-form' ).submit(function(e) {
-                e.preventDefault();
-                const data = {
-                    email: email,
-                    send: true
-                }
-                if (data) {
-                    $('#modelId').modal("show");
-                }
-            } );
             function timerCount() {
-                var endTime = new Date("18 October 2020 20:48:00 GMT+01:00");
+                var endTime = new Date(dateEvent);
                 endTime = (Date.parse(endTime)/1000);
 
                 var nowTime = new Date();
@@ -182,12 +226,7 @@
                     sec = "0"+sec;
                 }
 
-                if ((days <= "0" || hours <= "0" || min <= "0" || sec <= "0")) {
-                    $('#days').html(days);
-                    $('#hour').html(hours);
-                    $('#min').html(min);
-                    $('#sec').html(sec);
-                }
+                
                 if((days < "0" || hours < "0" || min < "0" || sec < "0")){
                     $('#days').html("0 0");
                     $('#hour').html("0 0");
@@ -195,6 +234,27 @@
                     $('#sec').html("0 0");
 
                     $('#disp-done').css("display", "block");
+                    //$('#submit').
+                    $('#message').html("Registration Closed!").removeClass("d-none").addClass("d-block")
+                }else{
+                    $('#days').html(days);
+                    $('#hour').html(hours);
+                    $('#min').html(min);
+                    $('#sec').html(sec);
+                    let email;
+                    $('#email').on("change", function (e) {
+                        email = $(this).val();
+                    });
+                    $( '#btni-form' ).submit(function(e) {
+                        e.preventDefault();
+                        const data = {
+                            email: email,
+                            send: true
+                        }
+                        if (data) {
+                            $('#modelId').modal("show");
+                        }
+                    } );
                 }
 
             }
