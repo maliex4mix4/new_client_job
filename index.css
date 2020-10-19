@@ -92,4 +92,7 @@ ul li{
   .w-50-sm{
     width: 95vw;
   }
+  .bbg{
+    box-shadow: rgba(243, 216, 216, 0.6) 1.9vw 2.9vw;
+  }
 }
