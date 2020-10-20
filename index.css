@@ -9,7 +9,7 @@ body {
 }
 
 .content-first {
-    background-image: url('./images/img3.jpg');
+    background-image: url('images/img3.jpg');
     background-size: cover;
     height: 70vh;
     width: 100vw;
